@@ -2015,7 +2015,8 @@ filterMenuItem maybeQuery item =
             True
 
         Just query ->
-            String.contains (String.toLower query) <| String.toLower item.label
+            -- String.contains (String.toLower query) <| String.toLower item.label
+            True
 
 
 filterMultiSelectedItems : List (MenuItem item) -> List (MenuItem item) -> List (MenuItem item)
